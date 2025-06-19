@@ -2,7 +2,7 @@ This mod allows the player to load custom questlines.
 
 # Features
 - Loading questlines through zip files
-- Allows for giving NPCs dialog, editing NPC parameters, let NPCs to give you quests
+- Allows for giving NPCs dialog and letting NPCs to give you quests
 - Support for custom NPCs
 
 # Installation
