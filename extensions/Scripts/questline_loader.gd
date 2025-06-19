@@ -11,7 +11,8 @@ func load_npc(name, path):
 			#merge function only merges top level keys
 			#so merge dialogue seperately
 			i.data["offline_dialogue"].merge(new_data["offline_dialogue"])
-			i.data["online_dialogue"].merge(new_data["online_dialogue"])
+			if i.data.has("online_dialogue"):
+				i.data["online_dialogue"].merge(new_data["online_dialogue"])
 			return
 	#Load new NPC
 	#Copied from init_people()
@@ -27,6 +28,7 @@ func load_npc(name, path):
 
 #Load tasks from json
 func load_tasks(path):
+	print("loading tasks!")
 	var task_data = read_json_file(path)
 	var task
 	for key in task_data:
@@ -35,7 +37,7 @@ func load_tasks(path):
 		for i in tasks:
 			if i.id == key:
 				no_duplicates = false
-
+		
 		if no_duplicates:
 			#Copied from init_tasks()
 			task = Task.new()
@@ -43,4 +45,6 @@ func load_tasks(path):
 			for k in task_data.get(key):
 				task[k] = task_data.get(key).get(k)
 			tasks.append(task)
+			print("task", key, "added.")
+
 
