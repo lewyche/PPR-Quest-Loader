@@ -23,11 +23,7 @@ func _init() -> void:
 	
 	_add_child_class()
 
-
 func _ready() -> void:
 	ModLoaderLog.info("Ready", AUTHORNAME_MODNAME_LOG_NAME)
 
 	ModLoaderLog.info("Translation Demo: " + tr("MODNAME_READY_TEXT"), AUTHORNAME_MODNAME_LOG_NAME)
-
-
-
