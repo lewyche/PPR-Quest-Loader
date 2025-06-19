@@ -14,7 +14,7 @@ This mod allows the player to load custom questlines.
 # Why not let mod developers just mod the questlines in themselves?
 The main purpose of this mod is to allow multiple mods that include custom questlines to work together. Plus it makes creating questlines and NPCs slightly easier.
 
-# For Mod Developers
+# For Mod Developers (Example questline in releases)
 - (Info on how to set up your modding copy can be found on the [PPR modloader wiki](https://github.com/CruS-Modding-Infrastructure/ppr-modloader))
 -  Quests can be created through exclusively the Tasks.json and NPC .json files, found in the NPCs folder
 -  Create a file called Tasks.json containing all the quests you are planning on adding:
