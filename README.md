@@ -35,7 +35,7 @@ The main purpose of this mod is to allow multiple mods that include custom quest
     ...
     "offline_dialogue":
     {
-      "flag": "task_flag",
+      "flag": "Task Name",
       "task": "Task Name",
       "line": "Eye Heart Wilheim Reich!"
     }
